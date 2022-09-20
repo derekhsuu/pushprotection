@@ -27,15 +27,3 @@ template_vars['output'] = commands.getstatusoutput('/usr/bin/process_soemthing')
 
 #Amazon client ID
 amazon_oauth_client_id="MIIBpjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQI5yNCu9T5SnsCAggAMBQGCCqGSIb3DQ"
-
-#cross site scripting
-<html>
-  <head>
-    <script>
-        var url = new URL(window.location.href);
-        var terms = url.searchParams.get('terms');
-        document.write('You searched for ' + terms);
-    </script>
-  </head>
-    ...
-</html>
