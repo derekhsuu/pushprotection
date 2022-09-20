@@ -12,16 +12,16 @@ BioGu40pXVfjiLqhEKVVVEoHpI32oMkojhCGJs8Oow4bAxkzQFCtuWB1
 -----END ENCRYPTED PRIVATE KEY-----"
 print ("hello world, ",github_ssh_private_key)
 
+# embedded API credentials
 TWITTER_OAUTH_TOKEN = "dkedjekdjekldjekldje"
 TWITTER_OAUTH_SECRET = "dkejkdjekdjkejdkjekdjekjdkjed"
 AWS_CREDENTIALS = { 'key': 'djekjdkejde', 'secret': 'dncndmncdmncd' }
-# embedded API credentials
-LOG_SERVER = "secret.logging.internal.mozilla.com"
+
 # reference to internal hosts
-
+LOG_SERVER = "secret.logging.internal.mozilla.com"
 r = requests.get("http://some.internal.hosts.that.should.be.hidden")
-#Reference to internal hosts
 
+#python API calls
 import commands
 template_vars['output'] = commands.getstatusoutput('/usr/bin/process_soemthing')
-#python API calls
+
