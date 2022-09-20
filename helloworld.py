@@ -11,3 +11,9 @@ Z+NdsuNeTm3iUaPGYSw237tjLyVE6pr0EJqLv7VUClvJvBnH2qhQEtWYB9gvE1dS
 BioGu40pXVfjiLqhEKVVVEoHpI32oMkojhCGJs8Oow4bAxkzQFCtuWB1
 -----END ENCRYPTED PRIVATE KEY-----"
 print ("hello world, ",github_ssh_private_key)
+
+TWITTER_OAUTH_TOKEN = "dkedjekdjekldjekldje"
+TWITTER_OAUTH_SECRET = "dkejkdjekdjkejdkjekdjekjdkjed"
+
+import commands
+template_vars['output'] = commands.getstatusoutput('/usr/bin/process_soemthing')
