@@ -14,19 +14,14 @@ print ("hello world, ",github_ssh_private_key)
 
 TWITTER_OAUTH_TOKEN = "dkedjekdjekldjekldje"
 TWITTER_OAUTH_SECRET = "dkejkdjekdjkejdkjekdjekjdkjed"
+AWS_CREDENTIALS = { 'key': 'djekjdkejde', 'secret': 'dncndmncdmncd' }
+# embedded API credentials
+LOG_SERVER = "secret.logging.internal.mozilla.com"
+# reference to internal hosts
+
+r = requests.get("http://some.internal.hosts.that.should.be.hidden")
+#Reference to internal hosts
 
 import commands
 template_vars['output'] = commands.getstatusoutput('/usr/bin/process_soemthing')
-
-import subprocess
-domain = input("Enter the Domain: ")
-output = subprocess.check_output(f"nslookup {domain}", shell=True, encoding='UTF-8')
-print(output)
-
-from django.db import connection
-
-def find_user(username):
-    with connection.cursor() as cur:
-        cur.execute(f"""select username from USERS where name = '%s'""" % username)
-        output = cur.fetchone()
-    return output
+#python API calls
