@@ -25,3 +25,5 @@ r = requests.get("http://some.internal.hosts.that.should.be.hidden")
 import commands
 template_vars['output'] = commands.getstatusoutput('/usr/bin/process_soemthing')
 
+#Amazon client ID
+amazon_oauth_client_id="MIIBpjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQI5yNCu9T5SnsCAggAMBQGCCqGSIb3DQ"
